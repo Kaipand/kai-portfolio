@@ -26,7 +26,7 @@ public class HelloWorldServlet extends HttpServlet {
     list.add("my");
     list.add("name");
     list.add("is");
-    list.add("kai");
+    list.add("kairav");
     list.add("pandit");
     String json = new Gson().toJson(list);
     response.getWriter().println(json);
