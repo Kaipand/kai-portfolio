@@ -26,6 +26,7 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+// Flashlight for the scavenger hunt
 async function fetchcontent() {
     const responseFromServer = await fetch('/hello');
     const textFromResponse = await responseFromServer.json();
