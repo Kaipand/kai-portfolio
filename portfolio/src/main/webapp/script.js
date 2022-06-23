@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['I AM the danger.', 'Whats the most you ever lost on a coin toss?!', 'If it was easy it would just be called the way', 'Heres looking at you, kid'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -26,3 +26,19 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+async function fetchcontent() {
+    const responseFromServer = await fetch('/hello');
+    const textFromResponse = await responseFromServer.json();
+    const hellocontent = document.getElementById('hellocontent');
+    hellocontent.innerText = textFromResponse;
+  }
+  function update(flash){
+    var x = flash.clientX || flash.touches[0].clientX
+    var y = flash.clientY || flash.touches[0].clientY
+  
+    document.documentElement.style.setProperty('--cursorX', x + 'px')
+    document.documentElement.style.setProperty('--cursorY', y + 'px')
+  }
+  
+  document.addEventListener('mousemove',update)
+  document.addEventListener('touchmove',update)

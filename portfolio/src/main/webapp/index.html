@@ -7,13 +7,29 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <form method="POST">
+        <p>Tell me a riddle:</p>
+        <textarea name="text-input">riddle me this...</textarea>
+        <form action="/form-handler" method="POST">
+        <br/>
+        <input type="submit" />
+      </form>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1>Kai's really cool portfolio</h1>
+      <p>Hi there! Welcome to my portfolio!.</p>
+      <p>I am a current IT Intern at Merck, a former SD Intern at NASA Ames Research Center, and a student at Rutgers University.</p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
+      <img src="/images/dog.jpg" />
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
     </div>
+    <p>Click this button to see a Hello message :D</p>
+    <button onclick="fetchcontent();">
+      Hello :D!
+    </button>
+    <p id="hellocontent"></p>
+    <p>Click <a href="/hello">here</a> to see the server response directly.</p>
+  </body>
   </body>
 </html>
