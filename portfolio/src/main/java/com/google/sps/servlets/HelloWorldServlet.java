@@ -21,6 +21,7 @@ public class HelloWorldServlet extends HttpServlet {
     response.setContentType("application/json");
     ArrayList<String> list = new ArrayList<String> ();
 
+    // add name parts to an array list
     list.add("hi");
     list.add("my");
     list.add("name");
