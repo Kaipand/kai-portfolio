@@ -40,6 +40,6 @@ async function fetchcontent() {
     document.documentElement.style.setProperty('--cursorX', x + 'px')
     document.documentElement.style.setProperty('--cursorY', y + 'px')
   }
-  
+  // background updates with mouse movement
   document.addEventListener('mousemove',update)
   document.addEventListener('touchmove',update)
